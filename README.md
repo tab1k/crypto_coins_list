@@ -1,16 +1,16 @@
-# crypto_coins_list
+# CRYPTO APP
 
-A new Flutter project.
+A Flutter application for tracking and exploring cryptocurrencies in real-time.  
+This app demonstrates modern Flutter development principles, modular architecture, and clean UI/UX design.
 
-## Getting Started
+## 🚀 Features
 
-This project is a starting point for a Flutter application.
+- 🪙 View a list of popular cryptocurrencies
+- 📈 View detailed information about each cryptocurrency
+- 🌙 Beautiful dark and light themes
+- ⚡️ Smooth navigation and intuitive interface
 
-A few resources to get you started if this is your first Flutter project:
+## 📂 Project Structure
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+The project follows a modular feature-based architecture:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
