@@ -1,0 +1,1 @@
+export 'crypto_detail_screen.dart';
