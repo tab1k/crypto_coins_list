@@ -1,3 +1,4 @@
+import 'package:crypto_coins_list/features/crypto_list/widgets/crypto_coin_tile.dart';
 import 'package:flutter/material.dart';
 
 class CryptoListScreen extends StatefulWidget {
@@ -21,10 +22,6 @@ class _CryptoListScreenState extends State<CryptoListScreen> {
 
     return Scaffold(
 
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-
       body: 
         ListView.separated(
           separatorBuilder: (context, index) => Divider(color: theme.dividerColor,),
@@ -32,23 +29,15 @@ class _CryptoListScreenState extends State<CryptoListScreen> {
           itemBuilder: (context, i) { 
             const coinName = 'Bitcoin';
             const coinSubtitle = 'Bitcoin subtitle';
-            return ListTile(
-            leading: Image.asset('assets/images/bitcoin.png', height: 35, width: 35),
-            title: Text(coinName, style: theme.textTheme.bodyMedium,),
-            subtitle: Text(coinSubtitle, style: theme.textTheme.bodySmall,),
-            trailing: Icon(Icons.arrow_forward_ios),
-            onTap: () {
-              Navigator.of(context).pushNamed(
-                '/coin', 
-                arguments: {
-                  'coinName': coinName,
-                  'coinSubtitle': coinSubtitle,
-                },
-              );
-            },
-          );
-        },
-      ),
+
+            return CryptoCoinTile(coinName: coinName, theme: theme, coinSubtitle: coinSubtitle);
+          },
+        ),
+
+        
+
+
     );
   }
 }
+

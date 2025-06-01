@@ -1,3 +1,7 @@
+import 'package:crypto_coins_list/features/%20crypto_add/view/crypto_add_screen.dart';
+import 'package:crypto_coins_list/features/crypto_auth/sign_in/view/view.dart';
+import 'package:crypto_coins_list/features/crypto_home/view/crypto_home_screen.dart';
+import 'package:crypto_coins_list/router/router.dart';
 import 'package:flutter/material.dart';
 
 import 'package:crypto_coins_list/features/crypto_list/crypto_list.dart';
@@ -15,7 +19,7 @@ class CryptoCurrenciesListApp extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return MaterialApp(
-      title: 'My First Flutter App',
+      title: 'My First Flutter App', 
 
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
@@ -39,10 +43,7 @@ class CryptoCurrenciesListApp extends StatelessWidget {
 
       initialRoute: '/',
 
-      routes: {
-        '/' : (context) => const CryptoListScreen(title: 'Главная'),
-        '/coin' : (context) => CryptoDetailScreen(),
-      },
+      routes: routes,
 
     );
   }
