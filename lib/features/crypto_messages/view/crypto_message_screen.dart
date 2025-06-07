@@ -1,5 +1,6 @@
 
 
+import 'package:crypto_coins_list/features/crypto_messages/widgets/crypto_message_tile.dart';
 import 'package:flutter/material.dart';
 
 class CryptoMessageScreen extends StatefulWidget {
@@ -24,13 +25,7 @@ class _CryptoMessageScreenState extends State<CryptoMessageScreen> {
             const name = 'Person';
             const status = 'Online';
 
-
-            return ListTile(
-              leading: CircleAvatar(child: Text('A')),
-              title: Text(name, style: theme.textTheme.bodyMedium),
-              subtitle: Text(status, style: theme.textTheme.bodySmall),
-              trailing: Icon(Icons.message_outlined),
-            );
+            return CryptoMessageTile(name: name, status: status, theme: theme);
             
           }, 
           
